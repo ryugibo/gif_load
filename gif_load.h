@@ -215,7 +215,7 @@ GIF_EXTR long GIF_Load(void *data, long size,
     } *egch = 0;
     #pragma pack(pop)
     struct GIF_WHDR wtmp, whdr = {0};
-    long desc, blen;
+    long desc = 0, blen;
     uint8_t *buff;
 
     /** checking if the stream is not empty and has a 'GIF8[79]a' signature,
